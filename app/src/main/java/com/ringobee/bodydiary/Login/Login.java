@@ -1,4 +1,4 @@
-package com.ringobee.bodydiary;
+package com.ringobee.bodydiary.Login;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.ringobee.bodydiary.R;
 
 public class Login extends AppCompatActivity implements View.OnClickListener {
 
@@ -29,7 +31,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.login_activity);
         }else{ // 처음 비밀번호 설정 x
-            Intent i = new Intent(this, ResetPw.class);
+            Intent i = new Intent(this, com.ringobee.bodydiary.Login.ResetPw.class);
             startActivity(i);
         }
 
@@ -49,8 +51,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     }
 
     @Override
-    public void onClick(View view) {
-        switch (view.getId()){
+    public void onClick(View v) {
+        switch (v.getId()){
             case R.id.auto_login:
                 break;
             case R.id.login:
