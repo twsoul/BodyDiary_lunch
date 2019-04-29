@@ -48,7 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/input_pw" />
 
     <Button
-        android:id="@+id/login"
+        android:id="@id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -60,7 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/auto_login" />
 
     <Button
-        android:id="@+id/finger_login"
+        android:id="@id/finger_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
