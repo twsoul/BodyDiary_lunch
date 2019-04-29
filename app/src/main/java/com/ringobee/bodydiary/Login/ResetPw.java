@@ -43,13 +43,13 @@ public class ResetPw extends AppCompatActivity implements View.OnClickListener {
                 String ed_pw1= NewPwId.getText().toString();
 
                 if(ed_pw.equals(ed_pw1)){
-                    TextView a =findViewById(R.id.ox);
-                    a.setText("비밀 번호가 일치 합니다.");
-                    a.setBackgroundColor(Color.GREEN);
+                    TextView ox =findViewById(R.id.ox);
+                    ox.setText("비밀 번호가 일치 합니다.");
+                    ox.setTextColor(Color.parseColor("#56DBFF"));
                 }else{
-                    TextView  a =findViewById(R.id.ox);
-                    a.setText("비밀 번호가 일치 하지 않습니다.");
-                    a.setBackgroundColor(Color.RED);
+                    TextView ox =findViewById(R.id.ox);
+                    ox.setText("비밀 번호가 일치 하지 않습니다.");
+                    ox.setTextColor(Color.parseColor("#F83C3C"));
                 }
             }
             @Override
